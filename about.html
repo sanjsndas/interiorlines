@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About · Interior Lines Journal</title>
+  <meta name="description" content="About Interior Lines Journal — an independent editorial publication on residential architecture, interior design, and the built environment.">
+  <link rel="canonical" href="https://www.interiorlinesjournal.com/about.html">
+  <meta property="og:title" content="About · Interior Lines Journal">
+  <meta property="og:description" content="Independent editorial on residential architecture, interior design, materials, and practical guides for thoughtful living spaces.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.interiorlinesjournal.com/about.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=1200&auto=format&fit=crop">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600&family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <style>
+    /* ---------- RESET & VARIABLES ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg: #fbf9f6;
+      --paper: #ffffff;
+      --ink: #1e1e1e;
+      --ink-soft: #3c3c3c;
+      --muted: #6e6e6e;
+      --line: #e2ddd6;
+      --line-light: #ece8e1;
+      --accent: #9b6b4b;
+      --accent-soft: #f0e9e2;
+      --serif: 'Newsreader', Georgia, 'Times New Roman', serif;
+      --sans: 'Inter', 'DM Sans', system-ui, -apple-system, sans-serif;
+      --display: 'DM Sans', 'Inter', sans-serif;
+      --shadow-sm: 0 1px 2px rgba(0,0,0,0.02), 0 2px 8px rgba(0,0,0,0.02);
+      --shadow-card: 0 4px 16px rgba(0,0,0,0.02), 0 1px 4px rgba(0,0,0,0.02);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: 16px;
+      line-height: 1.6;
+      font-weight: 400;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    /* ---------- TYPOGRAPHY ---------- */
+    h1, h2, h3, h4 {
+      font-family: var(--serif);
+      font-weight: 400;
+      letter-spacing: -0.01em;
+      line-height: 1.25;
+    }
+
+    h1 {
+      font-size: 2.75rem;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+    }
+
+    h2 {
+      font-size: 1.9rem;
+      font-weight: 500;
+      margin-bottom: 0.6rem;
+    }
+
+    h3 {
+      font-size: 1.35rem;
+      font-weight: 500;
+      margin-bottom: 0.4rem;
+    }
+
+    .kicker {
+      font-family: var(--display);
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    .meta {
+      font-size: 0.8rem;
+      color: var(--muted);
+      font-family: var(--sans);
+      letter-spacing: 0.01em;
+    }
+
+    /* ---------- LAYOUT ---------- */
+    .container {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ---------- HEADER ---------- */
+    .site-header {
+      background: var(--paper);
+      border-bottom: 1px solid var(--line);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 0;
+    }
+
+    .logo {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+    }
+
+    .logo-mark {
+      font-family: var(--serif);
+      font-size: 1.8rem;
+      font-weight: 600;
+      letter-spacing: -0.03em;
+      line-height: 1;
+      color: var(--ink);
+    }
+
+    .logo-mark span {
+      color: var(--accent);
+      font-weight: 300;
+    }
+
+    .logo-sub {
+      font-family: var(--sans);
+      font-size: 0.6rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      line-height: 1.2;
+      border-left: 1px solid var(--line);
+      padding-left: 10px;
+      margin-left: 4px;
+    }
+
+    .nav {
+      display: flex;
+      gap: 28px;
+      align-items: center;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--ink-soft);
+    }
+
+    .nav a {
+      padding: 4px 0;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.15s, color 0.15s;
+    }
+
+    .nav a:hover {
+      border-bottom-color: var(--accent);
+      color: var(--ink);
+    }
+
+    .search-icon {
+      cursor: pointer;
+      padding: 4px;
+      display: flex;
+      align-items: center;
+      color: var(--ink-soft);
+      background: none;
+      border: none;
+      font-size: 0.9rem;
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      padding: 6px 10px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    /* ---------- SEARCH BAR ---------- */
+    .search-bar {
+      display: none;
+      background: var(--paper);
+      border-bottom: 1px solid var(--line);
+      padding: 14px 0;
+    }
+
+    .search-bar.active {
+      display: block;
+    }
+
+    .search-bar input {
+      width: 100%;
+      padding: 10px 16px;
+      font-family: var(--sans);
+      font-size: 0.95rem;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--bg);
+      outline: none;
+      transition: border-color 0.15s;
+    }
+
+    .search-bar input:focus {
+      border-color: var(--accent);
+    }
+
+    /* ---------- ABOUT PAGE SPECIFIC ---------- */
+    .about-hero {
+      padding: 56px 0 40px;
+      border-bottom: 1px solid var(--line-light);
+      margin-bottom: 48px;
+    }
+
+    .about-hero h1 {
+      font-size: 3rem;
+      max-width: 800px;
+      margin-bottom: 16px;
+    }
+
+    .about-hero .lead {
+      font-size: 1.2rem;
+      color: var(--ink-soft);
+      line-height: 1.7;
+      max-width: 720px;
+      font-family: var(--serif);
+      font-weight: 300;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 56px;
+      padding-bottom: 72px;
+    }
+
+    .about-content h2 {
+      font-size: 1.6rem;
+      margin-top: 40px;
+      margin-bottom: 16px;
+    }
+
+    .about-content h2:first-child {
+      margin-top: 0;
+    }
+
+    .about-content p {
+      font-size: 0.98rem;
+      color: var(--ink-soft);
+      line-height: 1.8;
+      margin-bottom: 18px;
+    }
+
+    .about-content ul {
+      margin: 18px 0 24px 20px;
+      color: var(--ink-soft);
+      font-size: 0.98rem;
+      line-height: 1.8;
+    }
+
+    .about-content li {
+      margin-bottom: 6px;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      margin: 32px 0 24px;
+    }
+
+    .team-member {
+      background: var(--paper);
+      padding: 24px 22px;
+      border-radius: 6px;
+      border: 1px solid var(--line-light);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .team-member .name {
+      font-family: var(--display);
+      font-weight: 600;
+      font-size: 1rem;
+      margin-bottom: 2px;
+    }
+
+    .team-member .role {
+      font-size: 0.75rem;
+      color: var(--accent);
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    .team-member p {
+      font-size: 0.85rem;
+      color: var(--ink-soft);
+      line-height: 1.6;
+      margin-bottom: 0;
+    }
+
+    .about-sidebar .sidebar-section {
+      margin-bottom: 40px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid var(--line-light);
+    }
+
+    .about-sidebar .sidebar-section:last-child {
+      border-bottom: none;
+    }
+
+    .about-sidebar h3 {
+      font-family: var(--display);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--ink);
+      margin-bottom: 20px;
+    }
+
+    .about-sidebar p {
+      font-size: 0.88rem;
+      color: var(--ink-soft);
+      line-height: 1.7;
+      margin-bottom: 12px;
+    }
+
+    .pullquote {
+      border-left: 3px solid var(--accent);
+      padding-left: 20px;
+      margin: 28px 0;
+      font-family: var(--serif);
+      font-size: 1.25rem;
+      font-weight: 400;
+      line-height: 1.6;
+      color: var(--ink);
+      font-style: italic;
+    }
+
+    .pullquote cite {
+      display: block;
+      font-family: var(--sans);
+      font-size: 0.8rem;
+      font-style: normal;
+      color: var(--muted);
+      margin-top: 8px;
+    }
+
+    .stat-row {
+      display: flex;
+      gap: 40px;
+      margin: 32px 0 16px;
+      flex-wrap: wrap;
+    }
+
+    .stat-item .number {
+      font-family: var(--serif);
+      font-size: 2rem;
+      font-weight: 500;
+      color: var(--accent);
+      line-height: 1.2;
+    }
+
+    .stat-item .label {
+      font-size: 0.75rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    /* ---------- FOOTER ---------- */
+    .site-footer {
+      background: var(--paper);
+      border-top: 1px solid var(--line);
+      padding: 56px 0 32px;
+      margin-top: 24px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 48px;
+      margin-bottom: 48px;
+    }
+
+    .footer-brand .logo-mark {
+      font-size: 1.5rem;
+      margin-bottom: 12px;
+    }
+
+    .footer-brand p {
+      font-size: 0.85rem;
+      color: var(--ink-soft);
+      line-height: 1.7;
+      max-width: 280px;
+    }
+
+    .footer-col h4 {
+      font-family: var(--display);
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--ink);
+      margin-bottom: 16px;
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col li {
+      margin-bottom: 10px;
+    }
+
+    .footer-col a {
+      font-size: 0.85rem;
+      color: var(--ink-soft);
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 28px;
+      border-top: 1px solid var(--line-light);
+      font-size: 0.75rem;
+      color: var(--muted);
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .footer-bottom a {
+      color: var(--muted);
+    }
+
+    .footer-bottom a:hover {
+      color: var(--accent);
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 1024px) {
+      .about-grid {
+        grid-template-columns: 1fr 280px;
+        gap: 40px;
+      }
+      .about-hero h1 {
+        font-size: 2.4rem;
+      }
+      .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 820px) {
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+      }
+      .nav {
+        display: none;
+      }
+      .menu-toggle {
+        display: block;
+      }
+      .header-inner {
+        flex-wrap: wrap;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+      }
+      .about-hero h1 {
+        font-size: 2rem;
+      }
+      .team-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .container {
+        padding: 0 18px;
+      }
+      .about-hero h1 {
+        font-size: 1.65rem;
+      }
+      .team-grid {
+        grid-template-columns: 1fr;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      .logo-sub {
+        display: none;
+      }
+      .stat-row {
+        gap: 24px;
+      }
+    }
+
+    /* utility */
+    .mt-2 { margin-top: 8px; }
+    .mb-2 { margin-bottom: 8px; }
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="logo">
+      <div class="logo-mark">Interior<span>Lines</span></div>
+      <div class="logo-sub">Journal</div>
+    </div>
+    <nav class="nav" aria-label="Main navigation">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="terms.html">Terms Of Privacy</a></li>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li><a href="cookies.html">Cookies Policy</a></li>
+      <li><a href="disclaimer.html">Disclaimer</a></li>
+      <li><a href="categories.html">Categories</a></li>
+    </nav>
+    <div style="display:flex;align-items:center;gap:12px;">
+      <button class="search-icon" onclick="toggleSearch()" aria-label="Toggle search">🔍</button>
+      <button class="menu-toggle" onclick="toggleMobileMenu()" aria-label="Menu">☰</button>
+    </div>
+  </div>
+  <!-- Search bar -->
+  <div class="search-bar" id="searchBar">
+    <div class="container">
+      <input type="text" id="searchInput" placeholder="Search articles by title, category, or keyword…" aria-label="Search articles">
+    </div>
+  </div>
+</header>
+
+<!-- ============ MOBILE NAV (simple) ============ -->
+<div id="mobileNav" style="display:none;background:var(--paper);border-bottom:1px solid var(--line);padding:16px 24px;">
+  <div style="display:flex;flex-direction:column;gap:12px;font-size:0.9rem;">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
+    <a href="cookies.html">Cookies</a>
+    <a href="disclaimer.html">Disclaimer</a>
+    <a href="categories.html">Categories</a>
+  </div>
+</div>
+
+<!-- ============ MAIN ============ -->
+<main class="container">
+
+  <!-- About Hero -->
+  <section class="about-hero">
+    <div class="kicker" style="margin-bottom: 8px;">About the Journal</div>
+    <h1>Independent editorial for people who care about how spaces feel.</h1>
+    <p class="lead">Interior Lines Journal is a publication devoted to residential architecture and interior design — long-form articles, practical guides, and critical perspective on the built environment.</p>
+  </section>
+
+  <!-- Two-column: content + sidebar -->
+  <div class="about-grid">
+
+    <!-- LEFT: Main content -->
+    <div class="about-content">
+
+      <h2>Our Mission</h2>
+      <p>We believe that good design is a form of care — for the people who live in a space, for the materials we use, and for the long life of a building. Our work is guided by a simple question: <em>how do design decisions affect the way people actually live?</em></p>
+      <p>Interior Lines Journal exists to answer that question with clarity, depth, and independence. We are not a design firm, a product marketplace, or a portfolio. We are a publication. That distinction matters: it allows us to write honestly about what works, what doesn't, and why — without commercial obligation.</p>
+
+      <div class="pullquote">
+        “We prioritize clarity over jargon, evidence over trends, and usefulness over aspiration alone.”
+        <cite>— Elena Marsh, Editor-in-Chief</cite>
+      </div>
+
+      <h2>Editorial Approach</h2>
+      <p>Every article is written with the reader in mind. Whether you are a design professional seeking a deeper perspective, a homeowner planning a renovation, or simply someone who cares about the quality of everyday spaces, we aim to meet you where you are.</p>
+      <ul>
+        <li><strong>Depth over speed.</strong> We take the time to report thoroughly and think carefully before publishing.</li>
+        <li><strong>Practical usefulness.</strong> Theory matters, but so does knowing which countertop will stain and which lighting layout will actually work.</li>
+        <li><strong>Material honesty.</strong> We write about finishes, fixtures, and construction methods with the specificity they deserve.</li>
+        <li><strong>No hidden agendas.</strong> We do not accept sponsored content or paid placements. Our recommendations are our own.</li>
+      </ul>
+
+      <h2>What We Cover</h2>
+      <p>Our editorial spans the full breadth of residential design — from the structural logic of a well-planned home to the tactile qualities of a hand-thrown ceramic tile. Regular sections include:</p>
+      <ul>
+        <li><strong>Architecture</strong> — the form, proportion, and spatial logic of residential buildings</li>
+        <li><strong>Interior Design</strong> — color, texture, furniture, and the composition of interior space</li>
+        <li><strong>Materials</strong> — stone, timber, tile, metal, and the practicalities of specification</li>
+        <li><strong>Lighting</strong> — both natural and artificial, from daylighting strategy to fixture selection</li>
+        <li><strong>Space Planning</strong> — how to make rooms work harder and feel better</li>
+        <li><strong>Home Design</strong> — kitchens, baths, home offices, and the details that shape daily life</li>
+      </ul>
+
+      <h2>The Team</h2>
+      <div class="team-grid">
+        <div class="team-member">
+          <div class="name">Elena Marsh</div>
+          <div class="role">Editor-in-Chief</div>
+          <p>Elena has written about architecture and interiors for over a decade, with a particular interest in the intersection of design, material culture, and domestic life. She founded Interior Lines Journal in 2024.</p>
+        </div>
+        <div class="team-member">
+          <div class="name">James Chen</div>
+          <div class="role">Senior Editor</div>
+          <p>James focuses on technical topics: lighting, building science, and the practical details that make or break a project. He holds a degree in architectural engineering and writes with unusual clarity.</p>
+        </div>
+        <div class="team-member">
+          <div class="name">Priya Nair</div>
+          <div class="role">Materials Editor</div>
+          <p>Priya covers finishes, fixtures, and the sustainable specification of materials for residential projects. She has consulted on residential builds across three continents.</p>
+        </div>
+      </div>
+
+      <h2>Independence & Transparency</h2>
+      <p>Interior Lines Journal is independently owned and operated. We do not run display advertising, sponsored posts, or affiliate links. Our revenue comes from reader subscriptions to our newsletter, <em>The Weekly Line</em>, and from occasional grants that support long-form reporting.</p>
+      <p>We believe that an editorial voice is only as trustworthy as its independence. If we ever change our funding model, we will say so clearly and prominently.</p>
+
+      <div class="stat-row">
+        <div class="stat-item">
+          <div class="number">48+</div>
+          <div class="label">Articles published</div>
+        </div>
+        <div class="stat-item">
+          <div class="number">12k</div>
+          <div class="label">Monthly readers</div>
+        </div>
+        <div class="stat-item">
+          <div class="number">3</div>
+          <div class="label">Contributing editors</div>
+        </div>
+        <div class="stat-item">
+          <div class="number">100%</div>
+          <div class="label">Independent</div>
+        </div>
+      </div>
+
+    </div><!-- end about-content -->
+
+    <!-- RIGHT: Sidebar -->
+    <aside class="about-sidebar">
+      <div class="sidebar-section">
+        <h3>From the Editor</h3>
+        <p>“Interior Lines Journal began as a simple idea: that writing about design could be both rigorous and generous. We wanted a place where a homeowner could learn how to choose a countertop and an architect could find a thoughtful essay on proportion — all in the same publication.”</p>
+        <p style="font-weight: 500; font-family: var(--display); font-size: 0.85rem; margin-top: 12px;">— Elena Marsh</p>
+      </div>
+
+      <div class="sidebar-section">
+        <h3>Editorial Standards</h3>
+        <p>All articles are reviewed by at least two editors. We fact-check technical claims and disclose any potential conflicts of interest. Corrections are published promptly and transparently.</p>
+        <p><a href="#" style="font-size:0.85rem; font-weight:500;">Read our full editorial policy →</a></p>
+      </div>
+
+      <div class="sidebar-section">
+        <h3>Contact</h3>
+        <p>For editorial inquiries, pitches, or corrections:</p>
+        <p><strong>editorial@interiorlinesjournal.com</strong></p>
+        <p>For general questions:</p>
+        <p><strong>hello@interiorlinesjournal.com</strong></p>
+      </div>
+
+      <div class="sidebar-section" style="border-bottom: none;">
+        <h3>The Weekly Line</h3>
+        <p style="font-size:0.85rem;">One thoughtful email each week. New articles, design ideas, and practical resources.</p>
+        <input type="email" placeholder="Your email address" style="width:100%;padding:9px 12px;font-family:var(--sans);font-size:0.82rem;border:1px solid var(--line);border-radius:4px;margin-bottom:10px;background:var(--paper);outline:none;" aria-label="Email address">
+        <button onclick="alert('Thank you — you are subscribed to The Weekly Line.')" style="width:100%;padding:9px 12px;background:var(--ink);color:white;border:none;border-radius:4px;font-family:var(--sans);font-size:0.78rem;font-weight:500;letter-spacing:0.02em;cursor:pointer;">Subscribe</button>
+      </div>
+    </aside>
+
+  </div><!-- end about-grid -->
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo-mark" style="font-size:1.5rem;">Interior<span style="color:var(--accent);">Lines</span></div>
+        <p>An independent editorial publication covering residential architecture, interior design, and the thoughtful use of materials and space.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Sections</h4>
+        <ul>
+          <li><a href="index.html">Articles</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+          <li><a href="cookies.html">Cookies</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Follow</h4>
+        <ul>
+          <li><a href="#">Newsletter</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Pinterest</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Interior Lines Journal. All rights reserved.</span>
+      <span>Made for readers who care about how spaces feel.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ SCRIPT ============ -->
+<script>
+  // ---------- SEARCH (placeholder only for about page) ----------
+  function toggleSearch() {
+    const bar = document.getElementById('searchBar');
+    bar.classList.toggle('active');
+    if (bar.classList.contains('active')) {
+      document.getElementById('searchInput').focus();
+    }
+  }
+
+  // ---------- MOBILE MENU ----------
+  function toggleMobileMenu() {
+    const nav = document.getElementById('mobileNav');
+    nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
+  }
+
+  // Close mobile nav when clicking a link
+  document.querySelectorAll('#mobileNav a').forEach(link => {
+    link.addEventListener('click', () => {
+      document.getElementById('mobileNav').style.display = 'none';
+    });
+  });
+
+  // Close search bar when clicking outside
+  document.addEventListener('click', (e) => {
+    const searchBar = document.getElementById('searchBar');
+    const searchIcon = document.querySelector('.search-icon');
+    if (searchBar.classList.contains('active') && !searchBar.contains(e.target) && !searchIcon.contains(e.target)) {
+      searchBar.classList.remove('active');
+    }
+  });
+
+  // ---------- SCHEMA MARKUP (JSON-LD) for About page ----------
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About Interior Lines Journal",
+    "description": "Independent editorial on residential architecture, interior design, materials, and practical guides for thoughtful living spaces.",
+    "url": "https://www.interiorlinesjournal.com/about.html",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Interior Lines Journal",
+      "founder": {
+        "@type": "Person",
+        "name": "Elena Marsh"
+      }
+    },
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "Interior Lines Journal",
+      "description": "An independent editorial publication covering residential architecture, interior design, and the thoughtful use of materials and space.",
+      "employee": [
+        {
+          "@type": "Person",
+          "name": "Elena Marsh",
+          "jobTitle": "Editor-in-Chief"
+        },
+        {
+          "@type": "Person",
+          "name": "James Chen",
+          "jobTitle": "Senior Editor"
+        },
+        {
+          "@type": "Person",
+          "name": "Priya Nair",
+          "jobTitle": "Materials Editor"
+        }
+      ]
+    }
+  };
+
+  const script = document.createElement('script');
+  script.type = 'application/ld+json';
+  script.textContent = JSON.stringify(schemaData);
+  document.head.appendChild(script);
+
+</script>
+
+</body>
+</html>

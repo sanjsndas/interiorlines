@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy · Interior Lines Journal</title>
+  <meta name="description" content="Privacy policy for Interior Lines Journal — how we collect, use, and protect your information.">
+  <link rel="canonical" href="https://www.interiorlinesjournal.com/privacy">
+  <meta property="og:title" content="Privacy Policy · Interior Lines Journal">
+  <meta property="og:description" content="How we handle your data at Interior Lines Journal.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.interiorlinesjournal.com/privacy">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=1200&auto=format&fit=crop">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Fonts (same as main) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600&family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+
+  <style>
+    /* ---------- RESET & VARIABLES (identical to main) ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg: #fbf9f6;
+      --paper: #ffffff;
+      --ink: #1e1e1e;
+      --ink-soft: #3c3c3c;
+      --muted: #6e6e6e;
+      --line: #e2ddd6;
+      --line-light: #ece8e1;
+      --accent: #9b6b4b;
+      --accent-soft: #f0e9e2;
+      --serif: 'Newsreader', Georgia, 'Times New Roman', serif;
+      --sans: 'Inter', 'DM Sans', system-ui, -apple-system, sans-serif;
+      --display: 'DM Sans', 'Inter', sans-serif;
+      --shadow-sm: 0 1px 2px rgba(0,0,0,0.02), 0 2px 8px rgba(0,0,0,0.02);
+      --shadow-card: 0 4px 16px rgba(0,0,0,0.02), 0 1px 4px rgba(0,0,0,0.02);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: 16px;
+      line-height: 1.6;
+      font-weight: 400;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    /* ---------- TYPOGRAPHY ---------- */
+    h1, h2, h3, h4 {
+      font-family: var(--serif);
+      font-weight: 400;
+      letter-spacing: -0.01em;
+      line-height: 1.25;
+    }
+
+    h1 {
+      font-size: 2.75rem;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 1.9rem;
+      font-weight: 500;
+      margin-bottom: 0.6rem;
+    }
+
+    h3 {
+      font-size: 1.35rem;
+      font-weight: 500;
+      margin-bottom: 0.4rem;
+    }
+
+    .kicker {
+      font-family: var(--display);
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    .meta {
+      font-size: 0.8rem;
+      color: var(--muted);
+      font-family: var(--sans);
+      letter-spacing: 0.01em;
+    }
+
+    /* ---------- LAYOUT ---------- */
+    .container {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ---------- HEADER (same as main) ---------- */
+    .site-header {
+      background: var(--paper);
+      border-bottom: 1px solid var(--line);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 0;
+    }
+
+    .logo {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+    }
+
+    .logo-mark {
+      font-family: var(--serif);
+      font-size: 1.8rem;
+      font-weight: 600;
+      letter-spacing: -0.03em;
+      line-height: 1;
+      color: var(--ink);
+    }
+
+    .logo-mark span {
+      color: var(--accent);
+      font-weight: 300;
+    }
+
+    .logo-sub {
+      font-family: var(--sans);
+      font-size: 0.6rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      line-height: 1.2;
+      border-left: 1px solid var(--line);
+      padding-left: 10px;
+      margin-left: 4px;
+    }
+
+    .nav {
+      display: flex;
+      gap: 28px;
+      align-items: center;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--ink-soft);
+      list-style: none;
+    }
+
+    .nav a {
+      padding: 4px 0;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.15s, color 0.15s;
+    }
+
+    .nav a:hover {
+      border-bottom-color: var(--accent);
+      color: var(--ink);
+    }
+
+    .search-icon {
+      cursor: pointer;
+      padding: 4px;
+      display: flex;
+      align-items: center;
+      color: var(--ink-soft);
+      background: none;
+      border: none;
+      font-size: 0.9rem;
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      padding: 6px 10px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    /* ---------- SEARCH BAR ---------- */
+    .search-bar {
+      display: none;
+      background: var(--paper);
+      border-bottom: 1px solid var(--line);
+      padding: 14px 0;
+    }
+
+    .search-bar.active {
+      display: block;
+    }
+
+    .search-bar input {
+      width: 100%;
+      padding: 10px 16px;
+      font-family: var(--sans);
+      font-size: 0.95rem;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--bg);
+      outline: none;
+      transition: border-color 0.15s;
+    }
+
+    .search-bar input:focus {
+      border-color: var(--accent);
+    }
+
+    /* ---------- PRIVACY PAGE SPECIFIC ---------- */
+    .privacy-main {
+      padding: 56px 0 80px;
+    }
+
+    .privacy-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: start;
+    }
+
+    .privacy-intro h1 {
+      margin-bottom: 18px;
+    }
+
+    .privacy-intro p {
+      font-size: 1.05rem;
+      color: var(--ink-soft);
+      line-height: 1.75;
+      margin-bottom: 24px;
+      max-width: 90%;
+    }
+
+    .privacy-details {
+      margin-top: 36px;
+    }
+
+    .privacy-details h3 {
+      font-family: var(--display);
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 16px;
+    }
+
+    .privacy-detail-item {
+      margin-bottom: 24px;
+    }
+
+    .privacy-detail-item .label {
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 4px;
+    }
+
+    .privacy-detail-item .value {
+      font-family: var(--serif);
+      font-size: 1.15rem;
+      font-weight: 500;
+      color: var(--ink);
+    }
+
+    .privacy-detail-item .value a {
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 2px;
+      transition: border-color 0.15s;
+    }
+
+    .privacy-detail-item .value a:hover {
+      border-color: var(--accent);
+    }
+
+    .privacy-detail-item .note {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+
+    /* Policy Content */
+    .policy-content {
+      background: var(--paper);
+      padding: 40px 36px;
+      border-radius: 6px;
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .policy-content h2 {
+      font-size: 1.6rem;
+      margin-bottom: 8px;
+      margin-top: 36px;
+    }
+
+    .policy-content h2:first-of-type {
+      margin-top: 0;
+    }
+
+    .policy-content h3 {
+      font-size: 1.15rem;
+      font-weight: 500;
+      margin-top: 28px;
+      margin-bottom: 8px;
+      font-family: var(--serif);
+    }
+
+    .policy-content p {
+      font-size: 0.95rem;
+      color: var(--ink-soft);
+      line-height: 1.75;
+      margin-bottom: 16px;
+    }
+
+    .policy-content ul {
+      margin: 12px 0 20px 24px;
+      font-size: 0.95rem;
+      color: var(--ink-soft);
+      line-height: 1.75;
+    }
+
+    .policy-content ul li {
+      margin-bottom: 6px;
+    }
+
+    .policy-content .highlight {
+      background: var(--accent-soft);
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-weight: 500;
+      color: var(--accent);
+    }
+
+    .policy-content .meta {
+      margin-bottom: 28px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--line-light);
+    }
+
+    .policy-content a {
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 2px;
+      transition: border-color 0.15s;
+    }
+
+    .policy-content a:hover {
+      border-color: var(--accent);
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 1024px) {
+      .privacy-grid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+      }
+      .privacy-intro p {
+        max-width: 100%;
+      }
+      h1 {
+        font-size: 2.3rem;
+      }
+    }
+
+    @media (max-width: 820px) {
+      .nav {
+        display: none;
+      }
+      .menu-toggle {
+        display: block;
+      }
+      .header-inner {
+        flex-wrap: wrap;
+      }
+      .policy-content {
+        padding: 28px 24px;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .container {
+        padding: 0 18px;
+      }
+      h1 {
+        font-size: 1.65rem;
+      }
+      .privacy-main {
+        padding: 32px 0 56px;
+      }
+      .privacy-detail-item .value {
+        font-size: 1rem;
+      }
+      .logo-sub {
+        display: none;
+      }
+      .policy-content h2 {
+        font-size: 1.3rem;
+      }
+    }
+
+    /* Mobile nav (hidden by default) */
+    #mobileNav {
+      display: none;
+      background: var(--paper);
+      border-bottom: 1px solid var(--line);
+      padding: 16px 24px;
+    }
+
+    #mobileNav a {
+      display: block;
+      padding: 8px 0;
+      font-size: 0.95rem;
+      color: var(--ink-soft);
+      border-bottom: 1px solid var(--line-light);
+    }
+
+    #mobileNav a:last-child {
+      border-bottom: none;
+    }
+
+    /* utility */
+    .mt-2 { margin-top: 8px; }
+    .mb-2 { margin-bottom: 8px; }
+  </style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="logo">
+      <a href="index.html" style="display:flex;align-items:baseline;gap:8px;text-decoration:none;">
+        <div class="logo-mark">Interior<span>Lines</span></div>
+        <div class="logo-sub">Journal</div>
+      </a>
+    </div>
+    <nav class="nav" aria-label="Main navigation">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="terms.html">Terms Of Privacy</a></li>
+      <li><a href="privacy.html" style="border-bottom-color:var(--accent);color:var(--ink);">Privacy Policy</a></li>
+      <li><a href="cookies.html">Cookies Policy</a></li>
+      <li><a href="disclaimer.html">Disclaimer</a></li>
+      <li><a href="categories.html">Categories</a></li>
+    </nav>
+    <div style="display:flex;align-items:center;gap:12px;">
+      <button class="search-icon" onclick="toggleSearch()" aria-label="Toggle search">🔍</button>
+      <button class="menu-toggle" onclick="toggleMobileMenu()" aria-label="Menu">☰</button>
+    </div>
+  </div>
+  <!-- Search bar -->
+  <div class="search-bar" id="searchBar">
+    <div class="container">
+      <input type="text" id="searchInput" placeholder="Search articles by title, category, or keyword…" aria-label="Search articles">
+    </div>
+  </div>
+</header>
+
+<!-- ============ MOBILE NAV ============ -->
+<div id="mobileNav">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="terms.html">Terms Of Privacy</a>
+  <a href="privacy.html">Privacy Policy</a>
+  <a href="cookies.html">Cookies Policy</a>
+  <a href="disclaimer.html">Disclaimer</a>
+  <a href="categories.html">Categories</a>
+</div>
+
+<!-- ============ MAIN PRIVACY ============ -->
+<main class="container privacy-main">
+
+  <div class="privacy-grid">
+
+    <!-- LEFT: INTRO & DETAILS -->
+    <div class="privacy-intro">
+      <div class="kicker" style="margin-bottom:12px;">Legal</div>
+      <h1>Privacy Policy</h1>
+      <p>This policy explains how Interior Lines Journal collects, uses, and protects your personal information when you visit our website or interact with our editorial team.</p>
+
+      <div class="privacy-details">
+        <h3>Policy summary</h3>
+        <div class="privacy-detail-item">
+          <div class="label">Effective date</div>
+          <div class="value">January 1, 2026</div>
+        </div>
+        <div class="privacy-detail-item">
+          <div class="label">Last updated</div>
+          <div class="value">March 15, 2026</div>
+        </div>
+        <div class="privacy-detail-item">
+          <div class="label">Data controller</div>
+          <div class="value">Interior Lines Journal</div>
+          <div class="note">1420 SE Morrison St, Suite 200, Portland, OR 97214</div>
+        </div>
+      </div>
+
+      <div class="privacy-details" style="margin-top:44px;">
+        <h3>Questions?</h3>
+        <div class="privacy-detail-item">
+          <div class="label">Privacy inquiries</div>
+          <div class="value"><a href="mailto:privacy@interiorlinesjournal.com">privacy@interiorlinesjournal.com</a></div>
+          <div class="note">We aim to respond within 5 business days.</div>
+        </div>
+      </div>
+
+      <div class="privacy-details" style="margin-top:44px;">
+        <h3>Quick links</h3>
+        <div style="display:flex;flex-direction:column;gap:10px;margin-top:8px;">
+          <a href="#information-we-collect" style="font-size:0.9rem;border-bottom:1px solid var(--line);padding-bottom:4px;">Information we collect</a>
+          <a href="#how-we-use" style="font-size:0.9rem;border-bottom:1px solid var(--line);padding-bottom:4px;">How we use your information</a>
+          <a href="#cookies" style="font-size:0.9rem;border-bottom:1px solid var(--line);padding-bottom:4px;">Cookies & tracking</a>
+          <a href="#third-parties" style="font-size:0.9rem;border-bottom:1px solid var(--line);padding-bottom:4px;">Third-party services</a>
+          <a href="#your-rights" style="font-size:0.9rem;border-bottom:1px solid var(--line);padding-bottom:4px;">Your rights</a>
+          <a href="#security" style="font-size:0.9rem;border-bottom:1px solid var(--line);padding-bottom:4px;">Data security</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: POLICY CONTENT -->
+    <div class="policy-content">
+      <p class="meta">Last updated: March 15, 2026</p>
+
+      <h2 id="information-we-collect">1. Information we collect</h2>
+      <p>We collect information you voluntarily provide to us, as well as certain data automatically when you browse our site.</p>
+
+      <h3>Information you provide</h3>
+      <ul>
+        <li><strong>Contact details</strong> — name, email address, and any message content when you use our contact form or email us directly.</li>
+        <li><strong>Newsletter subscription</strong> — email address if you choose to subscribe to our editorial newsletter.</li>
+        <li><strong>Pitches & submissions</strong> — any materials, links, or personal information you share when submitting story ideas.</li>
+      </ul>
+
+      <h3>Information collected automatically</h3>
+      <ul>
+        <li><strong>Usage data</strong> — pages visited, time spent, referring URLs, and general interaction with our content.</li>
+        <li><strong>Device & browser data</strong> — IP address, browser type, operating system, and screen resolution.</li>
+        <li><strong>Cookies & similar technologies</strong> — small text files that help us remember preferences and understand site performance.</li>
+      </ul>
+
+      <h2 id="how-we-use">2. How we use your information</h2>
+      <p>We use the information we collect for the following purposes:</p>
+      <ul>
+        <li>To respond to your inquiries, corrections, and story pitches.</li>
+        <li>To send our newsletter if you have opted in (you can unsubscribe at any time).</li>
+        <li>To improve our website, content, and reader experience.</li>
+        <li>To monitor site security and prevent abuse.</li>
+        <li>To comply with legal obligations.</li>
+      </ul>
+      <p>We do <span class="highlight">not</span> sell, rent, or trade your personal information to third parties for marketing purposes.</p>
+
+      <h2 id="cookies">3. Cookies & tracking</h2>
+      <p>We use minimal cookies to ensure our site functions properly and to understand how readers engage with our articles. These include:</p>
+      <ul>
+        <li><strong>Essential cookies</strong> — required for basic site functionality (e.g., remembering your cookie preferences).</li>
+        <li><strong>Analytics cookies</strong> — help us understand traffic patterns and popular content. We use privacy-focused analytics where possible.</li>
+        <li><strong>Preference cookies</strong> — remember settings like your display preferences.</li>
+      </ul>
+      <p>You can control cookies through your browser settings. Disabling cookies may affect some site features. For more details, see our <a href="cookies.html">Cookies Policy</a>.</p>
+
+      <h2 id="third-parties">4. Third-party services</h2>
+      <p>We may use trusted third-party services to support our operations, including:</p>
+      <ul>
+        <li><strong>Email delivery providers</strong> — to send newsletters and respond to inquiries.</li>
+        <li><strong>Analytics platforms</strong> — to understand site usage in aggregate.</li>
+        <li><strong>Font & asset delivery</strong> — Google Fonts and similar services for typography and images.</li>
+      </ul>
+      <p>These providers have their own privacy policies and are only given access to the information necessary to perform their specific functions. We do not share personal data with advertisers or data brokers.</p>
+
+      <h2 id="your-rights">5. Your rights</h2>
+      <p>Depending on your location, you may have the following rights regarding your personal information:</p>
+      <ul>
+        <li><strong>Access</strong> — request a copy of the personal data we hold about you.</li>
+        <li><strong>Correction</strong> — ask us to correct inaccurate or incomplete information.</li>
+        <li><strong>Deletion</strong> — request that we delete your personal data, subject to legal retention requirements.</li>
+        <li><strong>Opt-out</strong> — unsubscribe from marketing communications at any time.</li>
+        <li><strong>Restriction</strong> — request that we limit how we process your data.</li>
+      </ul>
+      <p>To exercise any of these rights, contact us at <a href="mailto:privacy@interiorlinesjournal.com">privacy@interiorlinesjournal.com</a>. We will respond within the timeframe required by applicable law.</p>
+
+      <h2 id="security">6. Data security</h2>
+      <p>We take reasonable technical and organizational measures to protect your personal information from unauthorized access, loss, or misuse. These include encrypted connections (HTTPS), access controls, and regular reviews of our data practices.</p>
+      <p>However, no method of transmission over the internet is 100% secure. While we strive to protect your data, we cannot guarantee absolute security.</p>
+
+      <h2>7. Data retention</h2>
+      <p>We retain personal information only as long as necessary to fulfill the purposes described in this policy, unless a longer retention period is required or permitted by law. Contact form submissions are typically retained for 12 months, and newsletter subscriptions are retained until you unsubscribe.</p>
+
+      <h2>8. Children's privacy</h2>
+      <p>Our content is intended for a general audience and is not directed at children under 13. We do not knowingly collect personal information from children. If you believe a child has provided us with personal data, please contact us and we will take steps to delete it.</p>
+
+      <h2>9. International transfers</h2>
+      <p>Our website is operated from the United States. If you access our site from outside the U.S., your information may be transferred to, stored, and processed in the U.S. By using our site, you consent to this transfer.</p>
+
+      <h2>10. Changes to this policy</h2>
+      <p>We may update this privacy policy from time to time. When we do, we will revise the "Last updated" date at the top of this page. We encourage you to review this page periodically to stay informed about how we protect your information.</p>
+
+      <h2>11. Contact us</h2>
+      <p>If you have questions, concerns, or requests regarding this privacy policy or your personal data, please reach out:</p>
+      <ul>
+        <li>Email: <a href="mailto:privacy@interiorlinesjournal.com">privacy@interiorlinesjournal.com</a></li>
+        <li>Mail: Interior Lines Journal, Editorial Office, 1420 SE Morrison St, Suite 200, Portland, OR 97214</li>
+      </ul>
+
+      <p style="margin-top:32px; padding-top:20px; border-top:1px solid var(--line-light); font-size:0.85rem; color:var(--muted);">
+        This privacy policy is provided for informational purposes and does not constitute legal advice. For specific legal concerns, please consult a qualified attorney.
+      </p>
+    </div>
+
+  </div>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo-mark" style="font-size:1.5rem;">Interior<span style="color:var(--accent);">Lines</span></div>
+        <p>An independent editorial publication covering residential architecture, interior design, and the thoughtful use of materials and space.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Sections</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+          <li><a href="cookies.html">Cookies</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Follow</h4>
+        <ul>
+          <li><a href="#">Newsletter</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Pinterest</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Interior Lines Journal. All rights reserved.</span>
+      <span>Made for readers who care about how spaces feel.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ SCRIPT ============ -->
+<script>
+  // ---------- SEARCH ----------
+  function toggleSearch() {
+    const bar = document.getElementById('searchBar');
+    bar.classList.toggle('active');
+    if (bar.classList.contains('active')) {
+      document.getElementById('searchInput').focus();
+    }
+  }
+
+  // ---------- MOBILE MENU ----------
+  function toggleMobileMenu() {
+    const nav = document.getElementById('mobileNav');
+    nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
+  }
+
+  // Close mobile nav when clicking a link
+  document.querySelectorAll('#mobileNav a').forEach(link => {
+    link.addEventListener('click', () => {
+      document.getElementById('mobileNav').style.display = 'none';
+    });
+  });
+
+  // Close search bar when clicking outside
+  document.addEventListener('click', (e) => {
+    const searchBar = document.getElementById('searchBar');
+    const searchIcon = document.querySelector('.search-icon');
+    if (searchBar.classList.contains('active') && !searchBar.contains(e.target) && !searchIcon.contains(e.target)) {
+      searchBar.classList.remove('active');
+    }
+  });
+
+  // ---------- SCHEMA MARKUP (JSON-LD) ----------
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Privacy Policy · Interior Lines Journal",
+    "description": "Privacy policy for Interior Lines Journal — how we collect, use, and protect your information.",
+    "url": "https://www.interiorlinesjournal.com/privacy",
+    "about": {
+      "@type": "Thing",
+      "name": "Privacy Policy"
+    },
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "Interior Lines Journal",
+      "email": "privacy@interiorlinesjournal.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1420 SE Morrison St, Suite 200",
+        "addressLocality": "Portland",
+        "addressRegion": "OR",
+        "postalCode": "97214",
+        "addressCountry": "US"
+      }
+    }
+  };
+
+  const script = document.createElement('script');
+  script.type = 'application/ld+json';
+  script.textContent = JSON.stringify(schemaData);
+  document.head.appendChild(script);
+</script>
+
+</body>
+</html>

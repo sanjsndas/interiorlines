@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Use · Interior Lines Journal</title>
+  <meta name="description" content="Terms of Use for Interior Lines Journal — the rules, guidelines, and legal terms governing the use of our website and content.">
+  <link rel="canonical" href="https://www.interiorlinesjournal.com/terms.html">
+  <meta property="og:title" content="Terms of Use · Interior Lines Journal">
+  <meta property="og:description" content="Terms of Use for Interior Lines Journal — the rules, guidelines, and legal terms governing the use of our website and content.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.interiorlinesjournal.com/terms.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=1200&auto=format&fit=crop">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600&family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <style>
+    /* ---------- RESET & VARIABLES ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg: #fbf9f6;
+      --paper: #ffffff;
+      --ink: #1e1e1e;
+      --ink-soft: #3c3c3c;
+      --muted: #6e6e6e;
+      --line: #e2ddd6;
+      --line-light: #ece8e1;
+      --accent: #9b6b4b;
+      --accent-soft: #f0e9e2;
+      --serif: 'Newsreader', Georgia, 'Times New Roman', serif;
+      --sans: 'Inter', 'DM Sans', system-ui, -apple-system, sans-serif;
+      --display: 'DM Sans', 'Inter', sans-serif;
+      --shadow-sm: 0 1px 2px rgba(0,0,0,0.02), 0 2px 8px rgba(0,0,0,0.02);
+      --shadow-card: 0 4px 16px rgba(0,0,0,0.02), 0 1px 4px rgba(0,0,0,0.02);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: 16px;
+      line-height: 1.6;
+      font-weight: 400;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    /* ---------- TYPOGRAPHY ---------- */
+    h1, h2, h3, h4 {
+      font-family: var(--serif);
+      font-weight: 400;
+      letter-spacing: -0.01em;
+      line-height: 1.25;
+    }
+
+    h1 {
+      font-size: 2.75rem;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      font-weight: 500;
+      margin-bottom: 0.6rem;
+      margin-top: 36px;
+    }
+
+    h3 {
+      font-size: 1.35rem;
+      font-weight: 500;
+      margin-bottom: 0.4rem;
+    }
+
+    .kicker {
+      font-family: var(--display);
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    .meta {
+      font-size: 0.8rem;
+      color: var(--muted);
+      font-family: var(--sans);
+      letter-spacing: 0.01em;
+    }
+
+    /* ---------- LAYOUT ---------- */
+    .container {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ---------- HEADER ---------- */
+    .site-header {
+      background: var(--paper);
+      border-bottom: 1px solid var(--line);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 0;
+    }
+
+    .logo {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+    }
+
+    .logo-mark {
+      font-family: var(--serif);
+      font-size: 1.8rem;
+      font-weight: 600;
+      letter-spacing: -0.03em;
+      line-height: 1;
+      color: var(--ink);
+    }
+
+    .logo-mark span {
+      color: var(--accent);
+      font-weight: 300;
+    }
+
+    .logo-sub {
+      font-family: var(--sans);
+      font-size: 0.6rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      line-height: 1.2;
+      border-left: 1px solid var(--line);
+      padding-left: 10px;
+      margin-left: 4px;
+    }
+
+    .nav {
+      display: flex;
+      gap: 28px;
+      align-items: center;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--ink-soft);
+    }
+
+    .nav a {
+      padding: 4px 0;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.15s, color 0.15s;
+    }
+
+    .nav a:hover {
+      border-bottom-color: var(--accent);
+      color: var(--ink);
+    }
+
+    .search-icon {
+      cursor: pointer;
+      padding: 4px;
+      display: flex;
+      align-items: center;
+      color: var(--ink-soft);
+      background: none;
+      border: none;
+      font-size: 0.9rem;
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      padding: 6px 10px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    /* ---------- SEARCH BAR ---------- */
+    .search-bar {
+      display: none;
+      background: var(--paper);
+      border-bottom: 1px solid var(--line);
+      padding: 14px 0;
+    }
+
+    .search-bar.active {
+      display: block;
+    }
+
+    .search-bar input {
+      width: 100%;
+      padding: 10px 16px;
+      font-family: var(--sans);
+      font-size: 0.95rem;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--bg);
+      outline: none;
+      transition: border-color 0.15s;
+    }
+
+    .search-bar input:focus {
+      border-color: var(--accent);
+    }
+
+    /* ---------- TERMS PAGE SPECIFIC ---------- */
+    .terms-hero {
+      padding: 56px 0 32px;
+      border-bottom: 1px solid var(--line-light);
+      margin-bottom: 40px;
+    }
+
+    .terms-hero h1 {
+      font-size: 2.8rem;
+      max-width: 800px;
+      margin-bottom: 12px;
+    }
+
+    .terms-hero .lead {
+      font-size: 1.15rem;
+      color: var(--ink-soft);
+      line-height: 1.7;
+      max-width: 720px;
+      font-family: var(--serif);
+      font-weight: 300;
+    }
+
+    .terms-grid {
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 56px;
+      padding-bottom: 72px;
+    }
+
+    .terms-content h2 {
+      font-size: 1.5rem;
+      margin-top: 44px;
+      margin-bottom: 14px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--line-light);
+    }
+
+    .terms-content h2:first-of-type {
+      margin-top: 0;
+    }
+
+    .terms-content h3 {
+      font-size: 1.15rem;
+      font-family: var(--display);
+      font-weight: 600;
+      margin-top: 28px;
+      margin-bottom: 8px;
+      color: var(--ink);
+    }
+
+    .terms-content p {
+      font-size: 0.96rem;
+      color: var(--ink-soft);
+      line-height: 1.8;
+      margin-bottom: 16px;
+    }
+
+    .terms-content ul,
+    .terms-content ol {
+      margin: 14px 0 22px 24px;
+      color: var(--ink-soft);
+      font-size: 0.96rem;
+      line-height: 1.8;
+    }
+
+    .terms-content li {
+      margin-bottom: 8px;
+    }
+
+    .terms-content strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    .terms-content .highlight-box {
+      background: var(--paper);
+      border-left: 4px solid var(--accent);
+      padding: 18px 24px;
+      margin: 28px 0;
+      border-radius: 0 6px 6px 0;
+      font-size: 0.95rem;
+      color: var(--ink-soft);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .terms-content .highlight-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    .terms-sidebar {
+      position: sticky;
+      top: 96px;
+      align-self: start;
+    }
+
+    .terms-sidebar .sidebar-section {
+      margin-bottom: 36px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid var(--line-light);
+    }
+
+    .terms-sidebar .sidebar-section:last-child {
+      border-bottom: none;
+    }
+
+    .terms-sidebar h3 {
+      font-family: var(--display);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--ink);
+      margin-bottom: 16px;
+    }
+
+    .terms-sidebar p {
+      font-size: 0.86rem;
+      color: var(--ink-soft);
+      line-height: 1.7;
+      margin-bottom: 12px;
+    }
+
+    .terms-sidebar ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .terms-sidebar li {
+      margin-bottom: 10px;
+      font-size: 0.86rem;
+      color: var(--ink-soft);
+    }
+
+    .terms-sidebar li a {
+      color: var(--ink-soft);
+      border-bottom: 1px dotted var(--line);
+    }
+
+    .terms-sidebar li a:hover {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
+
+    .terms-sidebar .last-updated {
+      font-size: 0.8rem;
+      color: var(--muted);
+      font-style: italic;
+    }
+
+    /* ---------- FOOTER ---------- */
+    .site-footer {
+      background: var(--paper);
+      border-top: 1px solid var(--line);
+      padding: 56px 0 32px;
+      margin-top: 24px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 48px;
+      margin-bottom: 48px;
+    }
+
+    .footer-brand .logo-mark {
+      font-size: 1.5rem;
+      margin-bottom: 12px;
+    }
+
+    .footer-brand p {
+      font-size: 0.85rem;
+      color: var(--ink-soft);
+      line-height: 1.7;
+      max-width: 280px;
+    }
+
+    .footer-col h4 {
+      font-family: var(--display);
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--ink);
+      margin-bottom: 16px;
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col li {
+      margin-bottom: 10px;
+    }
+
+    .footer-col a {
+      font-size: 0.85rem;
+      color: var(--ink-soft);
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 28px;
+      border-top: 1px solid var(--line-light);
+      font-size: 0.75rem;
+      color: var(--muted);
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .footer-bottom a {
+      color: var(--muted);
+    }
+
+    .footer-bottom a:hover {
+      color: var(--accent);
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 1024px) {
+      .terms-grid {
+        grid-template-columns: 1fr 260px;
+        gap: 40px;
+      }
+      .terms-hero h1 {
+        font-size: 2.3rem;
+      }
+    }
+
+    @media (max-width: 820px) {
+      .terms-grid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+      }
+      .terms-sidebar {
+        position: static;
+      }
+      .nav {
+        display: none;
+      }
+      .menu-toggle {
+        display: block;
+      }
+      .header-inner {
+        flex-wrap: wrap;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+      }
+      .terms-hero h1 {
+        font-size: 2rem;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .container {
+        padding: 0 18px;
+      }
+      .terms-hero h1 {
+        font-size: 1.7rem;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      .logo-sub {
+        display: none;
+      }
+    }
+
+    /* utility */
+    .mt-2 { margin-top: 8px; }
+    .mb-2 { margin-bottom: 8px; }
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="logo">
+      <div class="logo-mark">Interior<span>Lines</span></div>
+      <div class="logo-sub">Journal</div>
+    </div>
+    <nav class="nav" aria-label="Main navigation">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="terms.html">Terms Of Privacy</a></li>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li><a href="cookies.html">Cookies Policy</a></li>
+      <li><a href="disclaimer.html">Disclaimer</a></li>
+      <li><a href="categories.html">Categories</a></li>
+    </nav>
+    <div style="display:flex;align-items:center;gap:12px;">
+      <button class="search-icon" onclick="toggleSearch()" aria-label="Toggle search">🔍</button>
+      <button class="menu-toggle" onclick="toggleMobileMenu()" aria-label="Menu">☰</button>
+    </div>
+  </div>
+  <!-- Search bar -->
+  <div class="search-bar" id="searchBar">
+    <div class="container">
+      <input type="text" id="searchInput" placeholder="Search articles by title, category, or keyword…" aria-label="Search articles">
+    </div>
+  </div>
+</header>
+
+<!-- ============ MOBILE NAV (simple) ============ -->
+<div id="mobileNav" style="display:none;background:var(--paper);border-bottom:1px solid var(--line);padding:16px 24px;">
+  <div style="display:flex;flex-direction:column;gap:12px;font-size:0.9rem;">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
+    <a href="cookies.html">Cookies</a>
+    <a href="disclaimer.html">Disclaimer</a>
+    <a href="categories.html">Categories</a>
+  </div>
+</div>
+
+<!-- ============ MAIN ============ -->
+<main class="container">
+
+  <!-- Terms Hero -->
+  <section class="terms-hero">
+    <div class="kicker" style="margin-bottom: 8px;">Legal</div>
+    <h1>Terms of Use</h1>
+    <p class="lead">The rules, guidelines, and legal terms that govern your use of Interior Lines Journal and its content.</p>
+    <p class="meta" style="margin-top: 16px;">Last updated: <strong>March 12, 2026</strong> &nbsp;·&nbsp; Effective: <strong>March 12, 2026</strong></p>
+  </section>
+
+  <!-- Two-column: content + sidebar -->
+  <div class="terms-grid">
+
+    <!-- LEFT: Main content -->
+    <div class="terms-content">
+
+      <p>Welcome to <strong>Interior Lines Journal</strong> (“we,” “us,” “our,” or “the Journal”). These Terms of Use (“Terms”) govern your access to and use of our website located at <strong>interiorlinesjournal.com</strong> (the “Site”), including any content, features, and services offered on or through the Site.</p>
+
+      <p>By accessing or using the Site, you agree to be bound by these Terms. If you do not agree to these Terms, please do not use the Site.</p>
+
+      <div class="highlight-box">
+        <p><strong>Summary:</strong> You may read, share, and link to our content freely. You may not republish, scrape, or use our content for commercial purposes without written permission. We are not liable for how you use the information we provide. We may update these Terms from time to time.</p>
+      </div>
+
+      <h2>1. Use of the Site</h2>
+      <p>You agree to use the Site only for lawful purposes and in accordance with these Terms. You agree not to:</p>
+      <ul>
+        <li>Use the Site in any way that violates any applicable federal, state, local, or international law or regulation.</li>
+        <li>Attempt to gain unauthorized access to, interfere with, damage, or disrupt any part of the Site, the server on which the Site is stored, or any server, computer, or database connected to the Site.</li>
+        <li>Use any automated system, including without limitation “robots,” “spiders,” or “offline readers,” to access the Site in a manner that sends more request messages to our servers than a human can reasonably produce in the same period.</li>
+        <li>Introduce any viruses, trojan horses, worms, logic bombs, or other material that is malicious or technologically harmful.</li>
+        <li>Reproduce, duplicate, copy, sell, resell, or otherwise exploit any portion of the Site for commercial purposes without our express written permission.</li>
+      </ul>
+
+      <h2>2. Intellectual Property Rights</h2>
+      <p>All content on the Site — including text, articles, photographs, illustrations, graphics, logos, and the design, selection, and arrangement thereof — is the property of Interior Lines Journal or its content suppliers and is protected by United States and international copyright, trademark, and other intellectual property laws.</p>
+      <p>You may:</p>
+      <ul>
+        <li>Read, share, and link to our articles for personal, non-commercial purposes.</li>
+        <li>Quote brief excerpts (up to 100 words) with clear attribution and a link back to the original article on our Site.</li>
+        <li>Print or download one copy of a page for your own personal, non-commercial use.</li>
+      </ul>
+      <p>You may <strong>not</strong>:</p>
+      <ul>
+        <li>Republish, repost, or redistribute our articles in full or in substantial part without prior written permission.</li>
+        <li>Use our content for commercial purposes, including in paid newsletters, courses, or products.</li>
+        <li>Remove or alter any copyright, trademark, or other proprietary notices from copies of content.</li>
+        <li>Use our name, logo, or branding in any way that suggests endorsement or affiliation without our prior written consent.</li>
+      </ul>
+      <p>To request permission for uses beyond those described above, please contact us at <strong>editorial@interiorlinesjournal.com</strong>.</p>
+
+      <h2>3. User Contributions</h2>
+      <p>The Site may contain comment sections, contact forms, or other interactive features that allow users to post, submit, or transmit content (“User Contributions”). By submitting a User Contribution, you grant us a non-exclusive, royalty-free, perpetual, irrevocable, and fully sublicensable right to use, reproduce, modify, adapt, publish, and display such content in any media.</      <p>You represent and warrant that:</p>
+      <ul>
+        <li>You own or control all rights to the User Contribution and have the right to grant the license above.</li>
+        <li>Your User Contribution does not violate the rights of any third party, including copyright, trademark, privacy, or publicity rights.</li>
+        <li>Your User Contribution is not defamatory, obscene, offensive, or otherwise unlawful.</li>
+      </ul>
+      <p>We reserve the right to remove any User Contribution at our sole discretion, without notice, for any reason.</p>
+
+      <h2>4. Disclaimer of Warranties</h2>
+      <p>The information on the Site is provided for general informational and educational purposes only. While we strive for accuracy, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability of the information, products, services, or related graphics contained on the Site.</p>
+      <p>Any reliance you place on such information is strictly at your own risk. We are not responsible for any errors or omissions, or for any loss or damage of any kind arising from the use of the Site or the information provided.</p>
+      <p><strong>Design and Construction Disclaimer:</strong> Articles on this Site may discuss architectural, interior design, construction, and material topics. Such information is general in nature and is not a substitute for professional advice from a licensed architect, engineer, contractor, or other qualified professional. Always consult a qualified professional before undertaking any construction, renovation, or design project.</p>
+
+      <h2>5. Limitation of Liability</h2>
+      <p>To the fullest extent permitted by applicable law, Interior Lines Journal, its editors, contributors, and affiliates shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation loss of profits, data, use, goodwill, or other intangible losses, resulting from:</p>
+      <ul>
+        <li>Your access to, use of, or inability to access or use the Site.</li>
+        <li>Any conduct or content of any third party on the Site.</li>
+        <li>Any content obtained from the Site.</li>
+        <li>Unauthorized access, use, or alteration of your transmissions or content.</li>
+      </ul>
+      <p>In no event shall our total liability to you for all claims arising out of or relating to these Terms or your use of the Site exceed the amount of one hundred U.S. dollars ($100.00).</p>
+
+      <h2>6. Third-Party Links</h2>
+      <p>The Site may contain links to third-party websites or resources. These links are provided for your convenience only. We have no control over the content of those sites and accept no responsibility for them or for any loss or damage that may arise from your use of them. If you decide to access any third-party websites linked to from our Site, you do so entirely at your own risk and subject to the terms and conditions of those websites.</p>
+
+      <h2>7. Indemnification</h2>
+      <p>You agree to defend, indemnify, and hold harmless Interior Lines Journal and its editors, contributors, and affiliates from and against any claims, liabilities, damages, judgments, awards, losses, costs, expenses, or fees (including reasonable attorneys’ fees) arising out of or relating to your violation of these Terms or your use of the Site.</p>
+
+      <h2>8. Changes to These Terms</h2>
+      <p>We reserve the right to revise and update these Terms from time to time at our sole discretion. All changes are effective immediately when we post them and apply to all access to and use of the Site thereafter.</p>
+      <p>Your continued use of the Site following the posting of revised Terms means that you accept and agree to the changes. You are expected to check this page periodically so you are aware of any changes, as they are binding on you.</p>
+
+      <h2>9. Governing Law and Jurisdiction</h2>
+      <p>These Terms shall be governed by and construed in accordance with the laws of the State of New York, without regard to its conflict of law provisions. Any legal suit, action, or proceeding arising out of or related to these Terms or the Site shall be instituted exclusively in the federal or state courts located in New York County, New York.</p>
+
+      <h2>10. Contact Information</h2>
+      <p>If you have any questions about these Terms, please contact us:</p>
+      <ul>
+        <li><strong>Email:</strong> legal@interiorlinesjournal.com</li>
+        <li><strong>General inquiries:</strong> hello@interiorlinesjournal.com</li>
+      </ul>
+
+      <div class="highlight-box" style="margin-top: 40px;">
+        <p><strong>Thank you for reading Interior Lines Journal.</strong> We are grateful for your attention and trust. If you ever have concerns about how we operate or what we publish, please reach out — we take reader feedback seriously.</p>
+      </div>
+
+    </div><!-- end terms-content -->
+
+    <!-- RIGHT: Sidebar -->
+    <aside class="terms-sidebar">
+      <div class="sidebar-section">
+        <h3>On This Page</h3>
+        <ul>
+          <li><a href="#use">1. Use of the Site</a></li>
+          <li><a href="#ip">2. Intellectual Property</a></li>
+          <li><a href="#contributions">3. User Contributions</a></li>
+          <li><a href="#warranties">4. Disclaimer of Warranties</a></li>
+          <li><a href="#liability">5. Limitation of Liability</a></li>
+          <li><a href="#links">6. Third-Party Links</a></li>
+          <li><a href="#indemnification">7. Indemnification</a></li>
+          <li><a href="#changes">8. Changes to Terms</a></li>
+          <li><a href="#law">9. Governing Law</a></li>
+          <li><a href="#contact">10. Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-section">
+        <h3>Related Policies</h3>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="cookies.html">Cookies Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-section">
+        <h3>Editorial Standards</h3>
+        <p>We are committed to accuracy, independence, and transparency. Read our <a href="about.html" style="font-weight:500;">editorial policy</a> to learn more about how we work.</p>
+      </div>
+
+      <div class="sidebar-section" style="border-bottom: none;">
+        <h3>Last Updated</h3>
+        <p class="last-updated">March 12, 2026</p>
+        <p style="font-size:0.8rem; color:var(--muted); margin-top: 12px;">We review our Terms of Use annually and whenever our practices change.</p>
+      </div>
+    </aside>
+
+  </div><!-- end terms-grid -->
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo-mark" style="font-size:1.5rem;">Interior<span style="color:var(--accent);">Lines</span></div>
+        <p>An independent editorial publication covering residential architecture, interior design, and the thoughtful use of materials and space.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Sections</h4>
+        <ul>
+          <li><a href="index.html">Articles</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+          <li><a href="cookies.html">Cookies</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Follow</h4>
+        <ul>
+          <li><a href="#">Newsletter</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Pinterest</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Interior Lines Journal. All rights reserved.</span>
+      <span>Made for readers who care about how spaces feel.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ SCRIPT ============ -->
+<script>
+  // ---------- SEARCH (placeholder only) ----------
+  function toggleSearch() {
+    const bar = document.getElementById('searchBar');
+    bar.classList.toggle('active');
+    if (bar.classList.contains('active')) {
+      document.getElementById('searchInput').focus();
+    }
+  }
+
+  // ---------- MOBILE MENU ----------
+  function toggleMobileMenu() {
+    const nav = document.getElementById('mobileNav');
+    nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
+  }
+
+  // Close mobile nav when clicking a link
+  document.querySelectorAll('#mobileNav a').forEach(link => {
+    link.addEventListener('click', () => {
+      document.getElementById('mobileNav').style.display = 'none';
+    });
+  });
+
+  // Close search bar when clicking outside
+  document.addEventListener('click', (e) => {
+    const searchBar = document.getElementById('searchBar');
+    const searchIcon = document.querySelector('.search-icon');
+    if (searchBar.classList.contains('active') && !searchBar.contains(e.target) && !searchIcon.contains(e.target)) {
+      searchBar.classList.remove('active');
+    }
+  });
+
+  // ---------- SMOOTH SCROLL FOR SIDEBAR LINKS ----------
+  document.querySelectorAll('.terms-sidebar a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        const headerOffset = 90;
+        const elementPosition = targetElement.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+
+  // Add IDs to headings for anchor links (matching sidebar)
+  document.addEventListener('DOMContentLoaded', function() {
+    const headings = document.querySelectorAll('.terms-content h2');
+    const ids = ['use', 'ip', 'contributions', 'warranties', 'liability', 'links', 'indemnification', 'changes', 'law', 'contact'];
+    headings.forEach((h, i) => {
+      if (ids[i]) {
+        h.id = ids[i];
+      }
+    });
+  });
+
+  // ---------- SCHEMA MARKUP (JSON-LD) for Terms page ----------
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Terms of Use · Interior Lines Journal",
+    "description": "Terms of Use for Interior Lines Journal — the rules, guidelines, and legal terms governing the use of our website and content.",
+    "url": "https://www.interiorlinesjournal.com/terms.html",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Interior Lines Journal"
+    },
+    "dateModified": "2026-03-12"
+  };
+
+  const script = document.createElement('script');
+  script.type = 'application/ld+json';
+  script.textContent = JSON.stringify(schemaData);
+  document.head.appendChild(script);
+
+</script>
+
+</body>
+</html>
